@@ -17,7 +17,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -54,19 +53,92 @@
             </li>
           </ul>
         </address>
+
+        <button class="mobile-menu-open" type="button" data-menu-open>
+          <svg class="burger-icon" width="32" height="22">
+            <use href="./images/icon.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu-section">
+          <button type="button" class="mobile-menu-close" data-menu-close>
+            <svg class="mobile-close-btn" width="8" height="8">
+              <use href="images/icon.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="menu-list-link">
+                <a href="./index.html" class="menu-info current">Studio</a>
+              </li>
+              <li class="menu-list-link">
+                <a href="./portfolio.html" class="menu-info">Portfolio</a>
+              </li>
+              <li class="menu-list-link">
+                <a href="" class="menu-info">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="menu-address">
+            <ul class="menu-address-list">
+              <li class="menu-address-list-data">
+                <a href="mailto:info@devstudio.com" class="menu-contacts"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="menu-address-list-data">
+                <a href="tel:+110001111111" class="menu-contacts"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-menu-icon-list">
+            <li class="menu-icon-list-item">
+              <a class="menu-icon-list-link" href="">
+                <svg class="menu-icons" width="24" height="24">
+                  <use href="./images/icon.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon-list-item">
+              <a class="menu-icon-list-link" href="">
+                <svg class="menu-icons" width="24" height="24">
+                  <use href="./images/icon.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon-list-item">
+              <a class="menu-icon-list-link" href="">
+                <svg class="menu-icons" width="24" height="24">
+                  <use href="./images/icon.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon-list-item">
+              <a class="menu-icon-list-link" href="">
+                <svg class="menu-icons" width="24" height="24">
+                  <use href="./images/icon.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Main -->
     <main>
       <!-- HERO -->
+
       <section class="section-hero">
-        <div class="container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="button main-button" type="button" data-modal-open>
-            Order Service
-          </button>
-        </div>
+        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <button class="button main-button" type="button" data-modal-open>
+          Order Service
+        </button>
       </section>
+
       <!-- ADVANTAGES -->
       <section class="advantages section">
         <div class="container">
@@ -325,7 +397,7 @@
 
       <!-- CUSTONERS -->
 
-      <section class="customers section">
+      <!-- <section class="customers section">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list">
@@ -373,10 +445,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-side">
           <a class="footer-logo" href="./index.html">
@@ -440,7 +512,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="modal-backdrop is-hidden" data-modal>
       <div class="modal-window">
@@ -525,6 +597,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
