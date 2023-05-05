@@ -194,12 +194,21 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-color);
 }
-
-.mobile-menu-icon-list {
-  display: flex;
-  gap: 56px;
-  align-items: center;
-  margin-top: 48px;
+@media screen and (max-width: 427px) {
+  .mobile-menu-icon-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+  }
+}
+@media screen and (min-width: 428px) {
+  .mobile-menu-icon-list {
+    display: flex;
+    gap: 56px;
+    align-items: center;
+    margin-top: 48px;
+  }
 }
 
 .menu-icon-list-link {
@@ -1063,7 +1072,6 @@ img {
     letter-spacing: 0.04em;
     width: 264px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 16px;
   }
   .footer-logo-side {
     margin-right: 24px;
@@ -1158,7 +1166,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-top: 8px;
 }
 
 .footer-icon-list-link {
@@ -1612,6 +1619,7 @@ img {
   height: 16px;
   cursor: pointer;
   margin-right: 8px;
+  flex-shrink: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
